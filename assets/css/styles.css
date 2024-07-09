@@ -30,7 +30,7 @@ nav, .nav-links {
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 15vh;
 }
 
 .nav-links{
@@ -45,7 +45,7 @@ a {
     text-decoration-color: white;
 }
 
-a:hover {
+a.nav:hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
@@ -138,8 +138,8 @@ a:hover {
 
 /* Section */
 section{
-    padding-top: 4vh;
-    height: 96vh;
+    padding-top: 10vh;
+    height: 93vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -227,4 +227,59 @@ section{
 
 .btn-container {
     gap: 1rem;
+}
+
+/* About */
+#about {
+    position: relative;
+}
+
+.about-containers{
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container{
+    display: flex;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(0%, -50%);
+    }
+    50% {
+        transform: translate(0%, 0%);
+    }
+    100%{
+        transform: translate(0%, -50%);
+    }
+}
+
+.details-container {
+    padding: 1rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 60%;
+    padding-bottom: 10rem;
 }
